@@ -1,0 +1,20 @@
+.header{
+    height: 45px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-color: #2CA2F9;
+    .logo{
+        height: 25px;
+        img{
+            height: 100%;
+        }
+    }
+    .search{
+        width: 25px;
+        height: 25px;
+        background:url('../../static/images/search.png') no-repeat;
+        background-size: contain;
+    }
+}
