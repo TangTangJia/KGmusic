@@ -1,0 +1,17 @@
+.newList {
+    li{
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #f4f4f4;
+        font-size: 14px;
+        padding: 0 10px;
+        .arrow{
+            width: 15px;
+            height: 15px;
+            background: url('../../static/images/arrow_icon.png') no-repeat;
+            background-size: contain;
+        }
+    }
+}
