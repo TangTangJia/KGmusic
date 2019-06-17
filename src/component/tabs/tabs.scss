@@ -1,4 +1,10 @@
 .tabs{
     display: flex;
     flex-direction:column;
+    .am-tabs-tab-bar-wrap{
+        width: 100%;
+        top: 45px;
+        position: fixed;
+        z-index: 100;
+    }
 }

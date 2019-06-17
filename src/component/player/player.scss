@@ -1,0 +1,54 @@
+.player{
+    position: relative;
+    .player_control{
+        width: 35px;
+        height: 35px;
+        background: url('../../static/images/close_icon.png') no-repeat;
+        background-size: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 50%;
+        position: fixed;
+        bottom:74px;
+        left: 10px;
+        animation: move 1.5s linear infinite alternate;
+    }
+    @keyframes move {
+        0%{}
+        100%{
+            bottom:64px;
+        }
+    }
+    .player_panel{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 64px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 7px;
+        z-index: 12;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .song_face{
+            img{
+                width: 50px;
+            }
+        }
+        .player_tool{
+            display: flex;
+        }
+        .player_play{
+            width:40px;
+            height: 40px;
+            background: url('../../static/images/play_icon.png') no-repeat;
+            background-size: 100%;
+            margin-right: 20px;
+        }
+        .player_next{
+            width: 40px;
+            height: 40px;
+            background: url('../../static/images/next_icon.png') no-repeat;
+            background-size: 100%;
+        }
+    }   
+}
