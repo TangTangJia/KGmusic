@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Tabs, WhiteSpace, Badge } from 'antd-mobile'
+import { Tabs } from 'antd-mobile'
 import './tabs.scss'
 import Newlist from '../../views/newList/index'
 const tabs2 = [
@@ -14,6 +14,7 @@ export default class tabs extends Component {
             <div className="tabs">
                 <Tabs tabs={tabs2}
                     initialPage={0}
+                    swipeable={false}
                     onChange={(tab, index) => { console.log('onChange', index, tab); }}
                     onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
                 >

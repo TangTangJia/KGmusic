@@ -7,20 +7,20 @@
         background-size: 100%;
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 50%;
-        position: fixed;
-        bottom:74px;
+        position: absolute;
+        bottom:80px;
         left: 10px;
         animation: move 1.5s linear infinite alternate;
     }
     @keyframes move {
         0%{}
         100%{
-            bottom:64px;
+            bottom:70px;
         }
     }
     .player_panel{
         position: fixed;
-        bottom: 0;
+        bottom: -64px;
         width: 100%;
         height: 64px;
         background: rgba(0, 0, 0, 0.8);
@@ -29,6 +29,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: all .3s;
         .song_face{
             img{
                 width: 50px;
@@ -50,5 +51,8 @@
             background: url('../../static/images/next_icon.png') no-repeat;
             background-size: 100%;
         }
-    }   
+    }
+    .act{
+        bottom: 0;
+    } 
 }
