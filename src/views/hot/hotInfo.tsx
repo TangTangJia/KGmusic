@@ -1,26 +1,36 @@
 import React, { Component } from 'react'
-
-export default class hotInfo extends Component {
+import $http from '../../axios'
+import Info from '../../component/info/info'
+export default class hotInfo extends Component<{ match: any }> {
+    readonly state = {
+        id: this.props.match.params.id,
+        data: {},
+        isShow: false
+    }
     render() {
+        let element;
+        if (this.state.isShow) {
+            element = <Info data={this.state.data} />
+        } else {
+            element = <div></div>
+        }
         return (
-            <div className="info">
-                <div className="top">
-                    <div className='top_img'>
-                        <div className="title">入坑Vocaloid必听的那些传说级名曲</div>
-                    </div>
-                    <div className="top_desc">
-                        Vocaloid传说极名曲，指在n站播放量达到100W的Vocaloid歌曲，作为入坑Vocaloid的新人来说，这些歌曲无疑是最好的选择封面Pixiv
-                </div>
-                </div>
-                <div className="list">
-                    <ul>
-                        <li>
-                            <div>初音ミク、黒うさP - 千本桜</div>
-                            <div className='arrow'></div>
-                        </li>
-                    </ul>
-                </div>
+            <div className='info'>
+                {element}
             </div>
         )
+    }
+    componentDidMount() {
+        // console.log(this.props.match.params.id)
+        $http.get('/proxy/plist/list/?json=true&page=1&specialid=' + this.state.id).then(res => {
+            console.log(res.data)
+            this.setState({
+                data: res.data
+            }, () => {
+                this.setState({
+                    isShow: true
+                })
+            })
+        })
     }
 }

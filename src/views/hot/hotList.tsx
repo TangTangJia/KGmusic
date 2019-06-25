@@ -14,7 +14,7 @@ function HotList() {
         <div className="hot_list">
             <ul>
                 {hotList.map((item: any) => {
-                    return <li key={item.suid}>
+                    return <li key={item.specialid}>
                         <Link to={`/hotInfo/${item.specialid}`}>
                             <div className="left">
                                 <img src={item.imgurl.replace('{size}', '400')} alt="" />

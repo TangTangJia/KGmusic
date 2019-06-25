@@ -24,7 +24,7 @@ export default class tabs extends Component {
                     </div>
                     <div style={{ flex: 1, backgroundColor: '#fff' }}>
                     </div>
-                    <div style={{ flex: 1, backgroundColor: '##f5f5f9' }}>
+                    <div style={{ flex: 1, backgroundColor: '#f5f5f9' }}>
                         <HotList />
                     </div>
                     <div style={{ flex: 1, backgroundColor: '#fff' }}>
