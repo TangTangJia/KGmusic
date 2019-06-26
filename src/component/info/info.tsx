@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import './info.scss'
 export default class hotInfo extends Component<{ data: any }>{
     readonly state = {
@@ -12,6 +13,7 @@ export default class hotInfo extends Component<{ data: any }>{
                         <img src={this.props.data.info.list.imgurl.replace('{size}', '400')} alt="" />
                     </div>
                     <div className="title_wrap">
+                        <Link to='/'><div className="title_icon"></div></Link>
                         <div className="title">{this.props.data.info.list.specialname}</div>
                     </div>
                     <div className="top_desc">
