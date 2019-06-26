@@ -1,5 +1,4 @@
 .info{
-    background-color: #fff;
     .top{
         position: relative;
         .top_img{
@@ -22,11 +21,42 @@
                 text-align: center;
                 font-size: 16px;
                 line-height: 46px;
+                padding-left: 10px;
                 color: #fff;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
+        }
+        .top_desc{
+            display: flex;
+            padding: 0 10px;
+            justify-content: space-around;
+            background-color: #fff;
+            .desc_text{
+                width: 80%;
+                line-height: 45px;
+                overflow: hidden;
+                height: 45px;
+            }
+            .desc_text_open{
+                width: 80%;
+                line-height: 45px;
+                overflow: hidden;
+            }
+            .desc_icon{
+                background: url('../../static/images/close_icon.png');
+                background-size: 100%;
+                width: 26px;
+                height: 26px;
+                margin-top:10px;
+            }
+           
         }
     }
     .list{
+        margin-top:10px;
+        background-color: #fff;
         li{
             height: 45px;
             display: flex;

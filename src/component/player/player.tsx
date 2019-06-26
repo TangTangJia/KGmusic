@@ -22,15 +22,8 @@ export default class player extends Component {
         )
     }
     play = () => {
-        if (this.state.isAct) {
-            this.setState({
-                isAct: false
-            })
-        } else {
-            this.setState({
-                isAct: true
-            })
-        }
-
+        this.setState({
+            isAct: !this.state.isAct
+        })
     }
 }
