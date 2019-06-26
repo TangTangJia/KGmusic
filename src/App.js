@@ -1,6 +1,6 @@
 import './App.css';
-import Header from './component/header/header.tsx'
-import Player from './component/player/player.tsx'
+import Header from './component/header/header'
+import Player from './component/player/player'
 
 import React, { Component } from 'react'
 

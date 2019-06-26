@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import App from '../App.js'
 import HotInfo from '../views/hot/hotInfo'
 import Tabs from '../component/tabs/tabs'
+import Search from '../views/search/search'
 export default class ROUTER extends Component {
     render() {
         return (
@@ -12,6 +13,7 @@ export default class ROUTER extends Component {
                         <App>
                             <Route exact path='/' component={Tabs}></Route>
                             <Route path='/hotInfo/:id' component={HotInfo}></Route>
+                            <Route path='/search' component={Search}></Route>
                         </App>
                     </Route>
                 </Switch>
