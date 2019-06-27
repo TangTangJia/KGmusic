@@ -18,6 +18,7 @@
 ![首页](./example-images/1.png)
 ![热歌](./example-images/2.png)
 ![歌单详情页](./example-images/3.png)
+![搜索](./example-images/4.png)
 ---
 #### 项目运行
 ```

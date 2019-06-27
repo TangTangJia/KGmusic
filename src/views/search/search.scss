@@ -53,6 +53,12 @@
                 border-bottom: 1px solid #ccc;
                 font-size: 14px;
                 padding: 0 10px;
+                .name{
+                    flex: 1;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
                 .arrow{
                     width: 15px;
                     height: 15px;
