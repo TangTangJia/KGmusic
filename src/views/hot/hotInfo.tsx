@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import $http from '../../axios'
 import Info from '../../component/info/info'
-export default class hotInfo extends Component<{ match: any }> {
+import { match } from 'react-router-dom'
+export default class hotInfo extends Component<{ match: match<{ id: string }> }> {
     readonly state = {
         id: this.props.match.params.id,
         data: {},

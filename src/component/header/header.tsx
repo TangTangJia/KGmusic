@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
+import { History, Location } from 'history'
 import './header.scss'
 import logo from '../../static/images/logo.png'
-class header extends Component<{ history: any, location: any }> {
+class header extends Component<{ history: History, location: Location }> {
     render() {
         return (
             <div className="header">
