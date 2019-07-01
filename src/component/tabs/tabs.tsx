@@ -23,7 +23,7 @@ export default class tabs extends Component {
                     <div style={{ flex: 1, backgroundColor: '#fff' }}>
                         <Newlist />
                     </div>
-                    <div style={{ flex: 1, backgroundColor: '#fff' }}>
+                    <div style={{ flex: 1, backgroundColor: '#f5f5f9' }}>
                         <Rank />
                     </div>
                     <div style={{ flex: 1, backgroundColor: '#f5f5f9' }}>

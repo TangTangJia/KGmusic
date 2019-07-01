@@ -1,9 +1,35 @@
 .rank{
-    margin-top:900px;
+    margin-top:100px;
+    padding-left: 4%;
     a{
+        display: inline-block;
         height: 80px;
-    }
-    li{
-        height: 80px;
+        width: 100%;
+        li {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #ccc;
+            padding-left: 10px;
+            align-items: center;
+            justify-content: space-between;
+            .rank_left{
+                display: flex;
+                align-items: center;
+                color:#000;
+                font-size: 16px;
+                img{
+                    height: 60px;
+                    width: 60px;
+                    margin-right: 10px;
+                }
+            }
+            .rank_right{
+                width: 22px;
+                height: 22px;
+                background: url('../../static/images/arrow_icon.png') no-repeat;
+                background-size: contain;
+            }
+        }
     }
 }
