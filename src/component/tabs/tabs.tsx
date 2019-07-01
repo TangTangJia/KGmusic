@@ -3,6 +3,7 @@ import { Tabs } from 'antd-mobile'
 import './tabs.scss'
 import Newlist from '../../views/newList/index'
 import HotList from '../../views/hot/hotList'
+import Rank from '../../views/rank/rank'
 const tabs2 = [
     { title: '新歌', sub: '1' },
     { title: '排行', sub: '2' },
@@ -23,6 +24,7 @@ export default class tabs extends Component {
                         <Newlist />
                     </div>
                     <div style={{ flex: 1, backgroundColor: '#fff' }}>
+                        <Rank />
                     </div>
                     <div style={{ flex: 1, backgroundColor: '#f5f5f9' }}>
                         <HotList />
