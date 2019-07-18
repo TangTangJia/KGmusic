@@ -4,6 +4,7 @@ import App from '../App.js'
 import HotInfo from '../views/hot/hotInfo'
 import Tabs from '../component/tabs/tabs'
 import Search from '../views/search/search'
+import RankInfo from '../views/rank/rankInfo'
 export default class ROUTER extends Component {
     render() {
         return (
@@ -14,6 +15,7 @@ export default class ROUTER extends Component {
                             <Route exact path='/' component={Tabs}></Route>
                             <Route path='/hotInfo/:id' component={HotInfo}></Route>
                             <Route path='/search' component={Search}></Route>
+                            <Route path='/rankInfo/:id' component={RankInfo}></Route>
                         </App>
                     </Route>
                 </Switch>
