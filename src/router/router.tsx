@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import App from '../App.js'
 import HotInfo from '../views/hot/hotInfo'
 import Tabs from '../component/tabs/tabs'
