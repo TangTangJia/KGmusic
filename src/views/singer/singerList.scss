@@ -1,0 +1,30 @@
+.singerList{
+    margin-top:50px;
+    padding-left: 4%;
+        li {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #ccc;
+            padding-left: 10px;
+            align-items: center;
+            justify-content: space-between;
+            .rank_left{
+                display: flex;
+                align-items: center;
+                color:#000;
+                font-size: 16px;
+                img{
+                    height: 60px;
+                    width: 60px;
+                    margin-right: 10px;
+                }
+            }
+            .rank_right{
+                width: 22px;
+                height: 22px;
+                background: url('../../static/images/right_icon.png') no-repeat;
+                background-size: contain;
+            }
+        }
+}

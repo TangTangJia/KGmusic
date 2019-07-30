@@ -5,7 +5,7 @@ import HotInfo from '../views/hot/hotInfo'
 import Tabs from '../component/tabs/tabs'
 import Search from '../views/search/search'
 import RankInfo from '../views/rank/rankInfo'
-import Slist from '../views/singer/list'
+import SingerList from '../views/singer/singerList'
 export default class ROUTER extends Component {
     render() {
         return (
@@ -17,7 +17,7 @@ export default class ROUTER extends Component {
                             <Route path='/hotInfo/:id' component={HotInfo}></Route>
                             <Route path='/search' component={Search}></Route>
                             <Route path='/rankInfo/:id' component={RankInfo}></Route>
-                            <Route path='/Slist' componet={Slist}></Route>
+                            <Route path='/singerList/:id' component={SingerList}></Route>
                         </App>
                     </Route>
                 </Switch>
